@@ -66,7 +66,17 @@ addButton.addEventListener('click', ()=>{
   printTodo(object)
   inputBox.value=''
   refresh()
-})
+  const listItem = document.querySelectorAll('li')
+  const hideShow = document.querySelector('.hide-show')
+    if(hideShow.innerText === 'Show all'){
+      for (const li of listItem){
+        if(li.classList[1]==='complete'){
+            li.classList.add('hidden')
+        }
+      }
+    }
+})      
+
 
 function hide(){
   const listItem = document.querySelectorAll('li')
