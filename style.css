@@ -1,3 +1,11 @@
 .complete {
   text-decoration: line-through;
+  /* display:none; */
+  /* transition-duration:1s; */
+}
+.hidden{
+  display:none;
+}
+.shown {
+  display: contents;
 }
